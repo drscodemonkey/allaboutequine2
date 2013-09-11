@@ -1,0 +1,49 @@
+# To keep this file up-to-date:
+# 
+# 1. Start with a pristine repository
+#        git clean -d -x --force
+# 2. Perform a build
+# 3. Run the build clean target
+#       ant clean
+# 4. Show what was not deleted
+#       git clean -d -x --force --dry-run
+# 5. Add selectors in this file to select the files/directories that
+#    were not deleted. Repeat from step 3 to verify changes.
+
+# build results
+/build.log
+/*.jar
+image/javaclasses/lib/vspidc.jar
+image/javaclasses/lib/vspidcsrc.zip
+image/meta-inf/
+work/vspidcclasses/
+
+# Copied here by 'ant copy_to_root'
+/implement.bat
+/killLab.bat
+/killMixedResin.bat
+/killMsgBroker.bat
+/lab.bat
+/map.bat
+/msgbroker.bat
+/resin.bat
+/resinStart.bat
+/resinStop.bat
+
+deploy/
+
+buildInfo.properties
+alcor.properties
+
+W2K3StartLabServer.bat
+W2K3StartMsgBroker.bat
+secureresin.conf
+vspidc.ini
+vsppmi.ini
+
+# IDE project files
+.idea
+*.iml
+.classpath
+.project
+.externalToolBuilders
